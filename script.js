@@ -15,6 +15,7 @@ document.getElementById("forms").addEventListener("submit", function (e) {
 
     const dados = [];
 
+    document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome" + nome;
 
 });
 

@@ -7,9 +7,15 @@ background-color: brown;
 
 }
 
-main{
+body{
 
 background-color: beige;
+
+}
+
+main{
+
+background-color: bisque;
 padding: 20px;
 border-radius: 30px;
 font-size: larger;
