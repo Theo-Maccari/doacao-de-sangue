@@ -13,7 +13,15 @@ document.getElementById("forms").addEventListener("submit", function (e) {
     if (idade < 16) return alert("Idade inválida");
     if (peso < 50) return alert("Peso inválido");
 
-    const dados = [];
+    let dados = [(
+        nome,
+        email,
+        telefone,
+        cidade,
+        estado,
+        peso,
+        tipo
+    )];
 
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome" + nome;
 
