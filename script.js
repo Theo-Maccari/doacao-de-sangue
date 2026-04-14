@@ -12,6 +12,7 @@ document.getElementById("forms").addEventListener("submit", function (e) {
     if (!email.includes("@")) return alert("Email inválido")
     if (idade < 16) return alert("Idade inválida");
     if (peso < 50) return alert("Peso inválido");
+    if (tipo == "0") return alert("Tipo sanguíneo inválido");
 
     let dados = [(
         nome,
@@ -24,6 +25,9 @@ document.getElementById("forms").addEventListener("submit", function (e) {
     )];
 
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome" + nome;
+
+    document.getElementById("enviar").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome" + nome;
+    alert("Formulário enviado!");
 
 });
 
